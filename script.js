@@ -3,8 +3,43 @@ const heroVideo = document.getElementById("heroVideo");
 const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 const navItems = document.querySelectorAll(".nav-link");
+const backgroundMusic = document.getElementById("backgroundMusic");
+const musicToggle = document.getElementById("musicToggle");
 
 let invitationOpened = false;
+let musicStarted = false;
+
+function updateMusicButton() {
+  if (backgroundMusic.muted || backgroundMusic.paused) {
+    musicToggle.classList.add("muted");
+    musicToggle.textContent = "🔇";
+    musicToggle.setAttribute("aria-label", "Unmute music");
+  } else {
+    musicToggle.classList.remove("muted");
+    musicToggle.textContent = "🔊";
+    musicToggle.setAttribute("aria-label", "Mute music");
+  }
+}
+
+function startBackgroundMusic() {
+  if (musicStarted) return;
+
+  musicStarted = true;
+  backgroundMusic.volume = 0.45;
+  backgroundMusic.muted = false;
+  backgroundMusic.play().catch(function(error) {
+    console.log("Music play was blocked:", error);
+  });
+  updateMusicButton();
+}
+
+function toggleMusicMute() {
+  backgroundMusic.muted = !backgroundMusic.muted;
+  if (!musicStarted) {
+    startBackgroundMusic();
+  }
+  updateMusicButton();
+}
 
 function openInvitation() {
   if (invitationOpened) return;
@@ -16,6 +51,8 @@ function openInvitation() {
   heroVideo.play().catch(function(error) {
     console.log("Video play was blocked:", error);
   });
+
+  startBackgroundMusic();
 
   setTimeout(function() {
     tapScreen.style.display = "none";
@@ -33,6 +70,11 @@ navItems.forEach(function(item) {
   item.addEventListener("click", function() {
     navLinks.classList.remove("active");
   });
+});
+
+musicToggle.addEventListener("click", function(event) {
+  event.stopPropagation();
+  toggleMusicMute();
 });
 
 const weddingDate = new Date("2026-12-20T14:00:00+08:00").getTime();
