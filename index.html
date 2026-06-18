@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Wedding Invitation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="tap-screen" id="tapScreen">
+    <div class="heart">
+      <span>Tap</span>
+    </div>
+    <p class="tap-note">to open the invitation</p>
+  </div>
+
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">Bride & Groom</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#couple" class="nav-link">Couple</a>
+      <a href="#details" class="nav-link">Details</a>
+      <a href="#countdown" class="nav-link">Countdown</a>
+      <a href="#schedule" class="nav-link">Schedule</a>
+      <a href="#location" class="nav-link">Map</a>
+      <a href="#dresscode" class="nav-link">Dress Code</a>
+      <a href="#rsvp" class="nav-link">RSVP</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#closing" class="nav-link nav-button">Thank You</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <video
+      class="hero-video"
+      id="heroVideo"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    >
+      <source src="assets/wedding-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="intro-text">You are invited to the wedding of</p>
+      <h1 class="couple-name">Bride & Groom</h1>
+      <p class="wedding-date">December 20, 2026</p>
+      <p class="wedding-place">San Agustin Church • Manila</p>
+      <a href="#couple" class="hero-button">Open Invitation</a>
+    </div>
+  </section>
+
+  <section class="couple-section" id="couple">
+    <p class="section-subtitle">Meet</p>
+    <h2 class="section-title">The Couple</h2>
+
+    <p class="section-description">
+      Two hearts, one promise, and a lifetime of love ahead. With joy and gratitude,
+      we invite you to witness the beginning of our forever.
+    </p>
+
+    <div class="couple-wrapper">
+      <div class="person-card">
+        <div class="person-photo">
+          <img src="assets/bride.jpg" alt="Bride photo">
+        </div>
+        <h3 class="person-name">Bride Name</h3>
+        <p class="person-role">The Bride</p>
+        <p class="person-text">
+          Graceful, loving, and full of warmth. She begins this beautiful chapter
+          with faith, joy, and a heart ready for forever.
+        </p>
+      </div>
+
+      <div class="couple-divider">
+        <div class="divider-line"></div>
+        <div class="divider-heart">♥</div>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo">
+          <img src="assets/groom.jpg" alt="Groom photo">
+        </div>
+        <h3 class="person-name">Groom Name</h3>
+        <p class="person-role">The Groom</p>
+        <p class="person-text">
+          Kind, faithful, and ready for forever. He steps into this new journey
+          with love, commitment, and a grateful heart.
+        </p>
+      </div>
+    </div>
+
+    <p class="couple-quote">
+      “Together is our favorite place to be.”
+    </p>
+  </section>
+
+  <section class="details-section" id="details">
+    <div class="details-wrapper">
+      <p class="section-subtitle">Save the Date</p>
+      <h2 class="section-title">Wedding Details</h2>
+
+      <p class="section-description">
+        With joyful hearts, we invite you to celebrate the beginning of our forever.
+      </p>
+
+      <div class="details-cards">
+        <div class="detail-card">
+          <div class="detail-icon">♡</div>
+          <h3>Date</h3>
+          <p class="detail-main">Saturday</p>
+          <p class="detail-sub">December 20, 2026</p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">✦</div>
+          <h3>Ceremony</h3>
+          <p class="detail-main">2:00 PM</p>
+          <p class="detail-sub">
+            San Agustin Church<br>
+            Intramuros, Manila
+          </p>
+        </div>
+
+        <div class="detail-card">
+          <div class="detail-icon">❦</div>
+          <h3>Reception</h3>
+          <p class="detail-main">5:00 PM</p>
+          <p class="detail-sub">
+            The Manila Hotel<br>
+            Manila
+          </p>
+        </div>
+      </div>
+
+      <div class="soft-note">
+        <strong>A gentle reminder:</strong>
+        Kindly be present at least 30 minutes before the ceremony.
+        The full event schedule is provided below, and the location guide is available in the map section.
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown-section" id="countdown">
+    <div class="countdown-wrapper">
+      <p class="section-subtitle">Almost There</p>
+      <h2 class="section-title">Counting Down to Forever</h2>
+
+      <p class="section-description">
+        Every second brings us closer to the day we say “I do.”
+      </p>
+
+      <div class="clock-countdown">
+        <div class="clock-mark mark-12"></div>
+        <div class="clock-mark mark-3"></div>
+        <div class="clock-mark mark-6"></div>
+        <div class="clock-mark mark-9"></div>
+
+        <div class="clock-center">
+          <div class="clock-heart">♥</div>
+          <p>Until We Say</p>
+          <h3>I Do</h3>
+        </div>
+
+        <div class="clock-hand hour-hand" id="hourHand"></div>
+        <div class="clock-hand minute-hand" id="minuteHand"></div>
+        <div class="clock-hand second-hand" id="secondHand"></div>
+        <div class="clock-pin"></div>
+
+        <div class="time-unit days-unit">
+          <span class="countdown-number" id="days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+
+        <div class="time-unit hours-unit">
+          <span class="countdown-number" id="hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+
+        <div class="time-unit minutes-unit">
+          <span class="countdown-number" id="minutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+
+        <div class="time-unit seconds-unit">
+          <span class="countdown-number" id="seconds">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <p class="countdown-message" id="countdownMessage">
+        Our special day is almost here.
+      </p>
+    </div>
+  </section>
+
+  <section class="schedule-section" id="schedule">
+    <div class="schedule-wrapper">
+      <p class="section-subtitle">Wedding Day Flow</p>
+      <h2 class="section-title">Event Schedule</h2>
+
+      <p class="section-description">
+        Here is the flow of our special day. We would be grateful to have you with us
+        from the ceremony until the celebration.
+      </p>
+
+      <div class="schedule-timeline">
+        <div class="schedule-item">
+          <div class="schedule-time">2:00 PM</div>
+          <div class="schedule-dot-wrap">
+            <div class="schedule-dot">⛪</div>
+          </div>
+          <div class="schedule-card">
+            <h3>Wedding Ceremony</h3>
+            <p>
+              The ceremony is the sacred beginning of the celebration. This is where the bride and groom
+              will exchange their vows, receive the blessing of marriage, and officially begin their journey
+              as husband and wife. Guests are kindly requested to arrive early and be seated before the ceremony starts.
+            </p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">3:30 PM</div>
+          <div class="schedule-dot-wrap">
+            <div class="schedule-dot">📷</div>
+          </div>
+          <div class="schedule-card">
+            <h3>Pictorial</h3>
+            <p>
+              After the ceremony, the couple will have photo sessions with family, relatives, friends,
+              and invited guests. This is the time to capture beautiful memories with the newlyweds before
+              everyone proceeds to the reception venue.
+            </p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">5:00 PM</div>
+          <div class="schedule-dot-wrap">
+            <div class="schedule-dot">🥂</div>
+          </div>
+          <div class="schedule-card">
+            <h3>Reception</h3>
+            <p>
+              Guests may proceed to the reception venue for registration, seating, and welcoming of the newlyweds.
+              This part gives everyone time to settle in, greet loved ones, and prepare for the evening celebration.
+            </p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">6:00 PM</div>
+          <div class="schedule-dot-wrap">
+            <div class="schedule-dot">🍽️</div>
+          </div>
+          <div class="schedule-card">
+            <h3>Dinner</h3>
+            <p>
+              Dinner will be served as the couple celebrates this special evening with their families and guests.
+              It is a time to enjoy good food, meaningful conversations, and the warm company of loved ones.
+            </p>
+          </div>
+        </div>
+
+        <div class="schedule-item">
+          <div class="schedule-time">7:00 PM</div>
+          <div class="schedule-dot-wrap">
+            <div class="schedule-dot">✨</div>
+          </div>
+          <div class="schedule-card">
+            <h3>Wedding Program</h3>
+            <p>
+              The wedding program will include messages, traditions, special moments, games, and celebration
+              with the couple. This is the joyful part of the evening where everyone shares laughter, love,
+              and blessings for the newlyweds.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-note">
+        <strong>Note:</strong>
+        The schedule may be adjusted slightly depending on the flow of the ceremony and reception.
+        Guests are encouraged to follow the host or coordinator’s announcements during the event.
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section" id="location">
+    <div class="location-poster">
+      <span class="location-badge">December 20, 2026</span>
+
+      <p class="section-subtitle">Ceremony & Reception Venues</p>
+      <h2 class="section-title">Location Guide</h2>
+
+      <p class="section-description">
+        Please use the map below as your guide to our ceremony and reception venues.
+        We can’t wait to celebrate this special day with you.
+      </p>
+
+      <div class="map-cards">
+        <div class="map-card">
+          <div class="map-card-header">
+            <div class="map-icon">⛪</div>
+            <div>
+              <p class="venue-type">Wedding Ceremony</p>
+              <h3>Ceremony</h3>
+            </div>
+          </div>
+
+          <p class="venue-name">San Agustin Church</p>
+          <p class="venue-address">Intramuros, Manila</p>
+
+          <p class="venue-description">
+            This is where we will exchange our vows and begin our forever.
+            Guests are kindly requested to arrive early and be seated before the ceremony starts.
+          </p>
+
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=San%20Agustin%20Church%20Intramuros%20Manila&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=San+Agustin+Church+Intramuros+Manila"
+            target="_blank"
+            rel="noopener">
+            Open Ceremony Map
+          </a>
+        </div>
+
+        <div class="map-card">
+          <div class="map-card-header">
+            <div class="map-icon">🥂</div>
+            <div>
+              <p class="venue-type">Wedding Reception</p>
+              <h3>Reception</h3>
+            </div>
+          </div>
+
+          <p class="venue-name">The Manila Hotel</p>
+          <p class="venue-address">Manila</p>
+
+          <p class="venue-description">
+            After the ceremony and pictorial, please proceed to the reception venue
+            for registration, dinner, program, and celebration with the newlyweds.
+          </p>
+
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=The%20Manila%20Hotel%20Manila&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=The+Manila+Hotel+Manila"
+            target="_blank"
+            rel="noopener">
+            Open Reception Map
+          </a>
+        </div>
+      </div>
+
+      <div class="soft-note">
+        <strong>Guest reminder:</strong>
+        Kindly check your travel time in advance and arrive early.
+        Parking, traffic, and venue guidelines may vary depending on the location.
+      </div>
+    </div>
+  </section>
+
+  <section class="dress-section" id="dresscode">
+    <div class="dress-poster">
+      <h2 class="dress-main-title">The Details</h2>
+      <p class="dress-subtitle">Attire Guide</p>
+
+      <p class="dress-intro">
+        We would love to see you in your formal attire. We encourage you to dress
+        according to our wedding color: soft and elegant khaki tones.
+      </p>
+
+      <p class="section-subtitle">Wedding Color Palette</p>
+      <h2 class="section-title">Pale Khaki Motif</h2>
+
+      <div class="khaki-palette">
+        <div class="swatch-item">
+          <span class="swatch" style="background:#948473;"></span>
+          <p class="swatch-name">Warm Taupe Khaki</p>
+          <p class="swatch-code">#948473</p>
+        </div>
+
+        <div class="swatch-item">
+          <span class="swatch" style="background:#BEAB8F;"></span>
+          <p class="swatch-name">Pale Khaki</p>
+          <p class="swatch-code">#BEAB8F</p>
+        </div>
+
+        <div class="swatch-item">
+          <span class="swatch" style="background:#CEB890;"></span>
+          <p class="swatch-name">Sand Khaki</p>
+          <p class="swatch-code">#CEB890</p>
+        </div>
+
+        <div class="swatch-item">
+          <span class="swatch" style="background:#DDCEB3;"></span>
+          <p class="swatch-name">Soft Khaki Beige</p>
+          <p class="swatch-code">#DDCEB3</p>
+        </div>
+
+        <div class="swatch-item">
+          <span class="swatch" style="background:#E8E0D1;"></span>
+          <p class="swatch-name">Ivory Khaki</p>
+          <p class="swatch-code">#E8E0D1</p>
+        </div>
+      </div>
+
+      <div class="attire-guide-layout">
+        <div class="model-board">
+          <h3>Principal Sponsors</h3>
+          <p>Formal Khaki Attire</p>
+
+          <img
+            src="assets/principal-sponsors.png"
+            alt="Principal sponsors attire guide"
+            class="attire-model-img"
+          >
+        </div>
+
+        <div class="attire-text-grid">
+          <div class="attire-card">
+            <h3>Principal Sponsors</h3>
+
+            <h4>Ladies</h4>
+            <p>
+              Formal dress, gown, or elegant long dress in khaki, pale khaki,
+              champagne khaki, taupe khaki, beige khaki, or soft neutral khaki shades.
+            </p>
+
+            <h4>Gentlemen</h4>
+            <p>
+              Barong Tagalog, formal long-sleeves, or formal coat with slacks.
+              Recommended colors are cream khaki, beige khaki, pale khaki, warm taupe,
+              or other soft khaki tones.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="attire-guide-layout">
+        <div class="model-board">
+          <h3>Wedding Guests</h3>
+          <p>Formal Khaki Attire</p>
+
+          <img
+            src="assets/wedding-guests.png"
+            alt="Wedding guests attire guide"
+            class="attire-model-img"
+          >
+        </div>
+
+        <div class="attire-text-grid">
+          <div class="attire-card">
+            <h3>Wedding Guests</h3>
+
+            <h4>Ladies</h4>
+            <p>
+              Formal or semi-formal dresses in the khaki color family.
+              You may wear pale khaki, sand khaki, soft beige khaki, taupe khaki,
+              or ivory khaki.
+            </p>
+
+            <h4>Gentlemen</h4>
+            <p>
+              Formal long-sleeves, Barong Tagalog, or formal polo with slacks.
+              Please choose khaki-inspired colors such as beige, taupe, cream,
+              pale khaki, or sand khaki.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="avoid-box">
+        <strong>Strictly No:</strong>
+        Jeans, shorts, casual t-shirts, slippers, rubber shoes, overly bright colors,
+        and pure white bridal-looking outfits. Please keep the look formal, soft,
+        and aligned with the khaki wedding motif.
+      </div>
+    </div>
+  </section>
+
+  <section class="rsvp-section" id="rsvp">
+    <div class="rsvp-wrapper">
+      <div class="rsvp-message">
+        <p class="section-subtitle">Kindly Respond</p>
+        <h2 class="section-title">RSVP</h2>
+
+        <p>
+          Your presence would mean so much to us. Kindly confirm your attendance
+          so we can prepare your seat with love.
+        </p>
+
+        <p class="rsvp-note">
+          Please submit one RSVP per family or invited group.
+        </p>
+      </div>
+
+      <form class="rsvp-form" id="rsvpForm">
+        <label>
+          Guest Name
+          <input type="text" name="guestName" placeholder="Enter your full name" required>
+        </label>
+
+        <label>
+          Number of Attendees
+          <select name="attendees" required>
+            <option value="">Select number of attendees</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </label>
+
+        <label>
+          Will you be attending?
+          <select name="attendance" required>
+            <option value="">Select your response</option>
+            <option value="Yes, I will attend">Yes, I will attend</option>
+            <option value="Sorry, I cannot attend">Sorry, I cannot attend</option>
+          </select>
+        </label>
+
+        <label>
+          Message for the Couple
+          <textarea name="message" rows="5" placeholder="Leave your message or wishes"></textarea>
+        </label>
+
+        <button type="submit" class="rsvp-button" id="rsvpButton">
+          Send RSVP
+        </button>
+
+        <p class="rsvp-status" id="rsvpStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-wrapper">
+      <p class="section-subtitle">Captured Moments</p>
+      <h2 class="section-title">Our Gallery</h2>
+
+      <p class="section-description">
+        A glimpse of the memories, laughter, and love that led us to forever.
+        Here are some of our favorite moments together.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large" data-caption="Where forever begins">
+          <img src="assets/gallery-1.jpg" alt="Wedding gallery photo 1" loading="lazy">
+          <div class="gallery-overlay"><p>Where forever begins</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="Our favorite place is together">
+          <img src="assets/gallery-2.jpg" alt="Wedding gallery photo 2" loading="lazy">
+          <div class="gallery-overlay"><p>Our favorite place is together</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="A love worth celebrating">
+          <img src="assets/gallery-3.jpg" alt="Wedding gallery photo 3" loading="lazy">
+          <div class="gallery-overlay"><p>A love worth celebrating</p></div>
+        </div>
+
+        <div class="gallery-item wide" data-caption="Before we say I do">
+          <img src="assets/gallery-4.jpg" alt="Wedding gallery photo 4" loading="lazy">
+          <div class="gallery-overlay"><p>Before we say I do</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="Together, always">
+          <img src="assets/gallery-5.jpg" alt="Wedding gallery photo 5" loading="lazy">
+          <div class="gallery-overlay"><p>Together, always</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="A promise of forever">
+          <img src="assets/gallery-6.jpg" alt="Wedding gallery photo 6" loading="lazy">
+          <div class="gallery-overlay"><p>A promise of forever</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="Love, laughter, and memories">
+          <img src="assets/gallery-7.jpg" alt="Wedding gallery photo 7" loading="lazy">
+          <div class="gallery-overlay"><p>Love, laughter, and memories</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="Our beautiful beginning">
+          <img src="assets/gallery-8.jpg" alt="Wedding gallery photo 8" loading="lazy">
+          <div class="gallery-overlay"><p>Our beautiful beginning</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="The journey to forever">
+          <img src="assets/gallery-9.jpg" alt="Wedding gallery photo 9" loading="lazy">
+          <div class="gallery-overlay"><p>The journey to forever</p></div>
+        </div>
+
+        <div class="gallery-item" data-caption="A lifetime of love ahead">
+          <img src="assets/gallery-10.jpg" alt="Wedding gallery photo 10" loading="lazy">
+          <div class="gallery-overlay"><p>A lifetime of love ahead</p></div>
+        </div>
+      </div>
+
+      <div class="gallery-note">
+        <strong>Photo guide:</strong>
+        Use 10 high-quality prenup, couple portrait, candid, or engagement photos.
+        Keep the image sizes optimized so the website loads smoothly on mobile.
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-section" id="closing">
+    <div class="closing-card">
+      <p class="section-subtitle">With Love</p>
+      <h2 class="closing-title">Thank You</h2>
+
+      <p class="closing-main">
+        Your presence is the greatest gift we could ask for.
+      </p>
+
+      <p class="closing-message">
+        Thank you for sharing in our joy and for being part of this special moment in our lives.
+        Your prayers, love, and support mean so much to us as we begin our forever.
+      </p>
+
+      <h3 class="closing-names">Bride & Groom</h3>
+      <p class="closing-date">December 20, 2026</p>
+
+      <p class="closing-final">
+        See you on our wedding day.
+      </p>
+
+      <div class="closing-actions">
+        <a href="#home" class="closing-button">Back to Top</a>
+        <a href="#rsvp" class="closing-button outline">View RSVP</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Made with love for Bride & Groom</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image preview">&times;</button>
+      <img src="" alt="Gallery preview" id="lightboxImage">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
